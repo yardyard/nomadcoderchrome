@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css 연결 -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Momentum</title>
+</head>
+<body>
+    <!--  input은 항상 form안에 있어야 함.-->
+    <form class="hidden" id="login-form"> 
+        <input 
+            required            
+            maxlength="15" 
+            type="text" 
+            placeholder="What is your name?">
+        <button>Log In</button>
+    </form>  
+    <!-- 시계를 표시할 h2 -->
+    <h2 id="clock">00:00:00</h2>
+    <!-- form이 사라지고 출력 될 h1-->
+    <h1 class="hidden" id="greeting" ></h1>
+    <form id="todo-form">
+        <input type="text" placeholder="write a To Do and press Enter" required/> 
+    </form>
+    <ul id="todo-list"></ul>
+    <div id="quote">
+        <span></span>
+        <span></span>
+    </div>
+    <div id="weather">
+        <span></span>
+        <span></span>
+    </div>
+    <!-- 자바 스크립트 연결 -->
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/backgrounds.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+</html>
