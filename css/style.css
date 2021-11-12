@@ -3,7 +3,13 @@
 }
 
 
-
 #clock {
-    
+    display: flex;
+    align-items: center;
+}
+
+img {
+    display: none;
+    position: absolute;
+    z-index: 6;
 }
