@@ -1,15 +1,168 @@
 .hidden {
     display: none;
 }
+/*Javascript에서 className 부여로 요소를 숨기기 위함*/
 
-
-#clock {
-    display: flex;
-    align-items: center;
+*{
+    box-sizing: border-box;
 }
 
-img {
-    display: none;
-    position: absolute;
-    z-index: 6;
+body{
+    padding-top: 300px;
+    font-family: 'Baloo Tammudu 2', 'Noto Sans KR', sans-serif;
+}
+
+img{
+    position:absolute;
+    width: 90%;
+    left:0;
+    top:0;
+    min-width:1880px;
+    min-height:2300px;
+    z-index:-5;
+    filter: brightness(70%);
+}
+
+#login-form{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin: 0 auto;
+    margin-left: 50px;
+}
+    #login-form input:first-child{
+        text-align: center;
+        color: white;
+        font-size: 1.3rem;
+        padding: 10px;
+        width: 280px;
+        background-color: rgb(235, 209, 235);
+        border:none;
+        transition: all, 1s;
+    }
+        #login-form input:first-child:hover{
+            background-color: rgba(233, 161, 233, 0.4);
+        }
+        #login-form input:hover::-webkit-input-placeholder{
+            color: rgb(155, 83, 165);
+        }
+        #login-form input:first-child:focus{
+            outline: none;
+            border-bottom: 1px solid white;
+            background-color: rgb(241, 202, 238);
+        }
+    #login-form button{
+        margin-left: 10px;
+        background-color: rgb(203, 171, 233);
+        color: rgb(223, 223, 223);
+        border: none;
+        border-radius: 20px;
+
+        box-shadow: 1px 1px 1px blueviolet;
+
+        transition-duration: 0.3s;
+    }
+    #login-form button:active{
+        margin-left: 5px;
+        margin-top: 5px;
+        box-shadow: none;
+    }
+
+#clock{
+    text-align: center;
+    height: 260px;
+    font-size: 8rem;
+    margin: 10px;
+    color: rgb(245, 216, 239);
+}
+
+#greeting{
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-size:2rem;
+    font-weight: 600;
+}
+
+#todo-form{
+    text-align: center;
+    margin-top: 50px;
+}
+#todo-form input{
+    text-align: center;
+    color:white;
+    font-size:0.8rem;
+    width: 540px;
+    height:30px;
+    background-color: rgb(245, 216, 239);
+    font-weight: 600;
+    border:none;
+    margin-bottom:20px;
+    margin-top: 20px;
+    transition: all, 0.4s;
+}
+    #todo-form input:hover{
+        background-color: rgba(233, 161, 233, 0.4);
+    }
+    #todo-form input:hover::-webkit-input-placeholder{ /*placeholder color change*/
+        color: rgb(155, 83, 165);
+    }
+    #todo-form input:focus{
+        outline:none;
+        border-bottom: 1px solid white;
+        background-color: rgb(241, 202, 238);
+    }
+
+#todo-list{
+    text-align: center;
+}
+    #todo-list li{
+        list-style: none;
+        color: rgb(245, 216, 239);
+        font-size: 2rem;
+        margin: 0 auto;
+        margin-right: 30px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    #todo-list li:hover{
+        color: rgb(155, 83, 165);
+    }
+    #todo-list button{
+        margin-left: 20px;
+        background-color: rgb(203, 171, 233);
+        color: rgb(223, 223, 223);
+        border: none;
+        border-radius: 20px;
+
+        box-shadow: 1px 1px 1px blueviolet;
+
+        transition-duration: 0.3s;
+    }
+    #todo-list button:hover{
+        cursor: pointer;
+    }
+    #todo-list button:active{
+        margin-left: 5px;
+        margin-top: 5px;
+        box-shadow: none;
+    }
+        
+#quote{
+    text-align: center;
+    color: rgb(245, 216, 239);
+    margin-top: 300px;
+    margin-bottom: 50px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+#weather{
+    text-align: center;
+    color: rgb(252, 176, 237);
+    font-size: 1rem;
+    font-weight: 700;
+}
+    #weather:hover{
+        color: rgb(155, 83, 165);
 }
